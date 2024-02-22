@@ -1,0 +1,28 @@
+{
+  "scopedRegistries": [
+    {
+      "name": "Keijiro",
+      "url": "https://registry.npmjs.com",
+      "scopes": [
+        "jp.keijiro"
+      ]
+    },
+    {
+      "name": "fuqunaga",
+      "url": "https://registry.npmjs.com",
+      "scopes": [
+        "ga.fuquna"
+      ]
+    }
+  ],
+  "dependencies": {
+    "com.unity.ai.navigation": "1.1.5",
+    "com.unity.toolchain.win-x86_64-linux-x86_64": "2.0.6",
+    "com.unity.ugui": "1.0.0",
+    "ga.fuquna.prefsgui": "3.3.1",
+    "ga.fuquna.prefsgui.rapidgui": "0.0.2",
+    "ga.fuquna.prefsgui.rosettaui": "1.1.0",
+    "io.conix.arena.unity": "https://github.com/arenaxr/arena-unity.git",
+    "jp.keijiro.klak.testtools": "1.0.3"
+  }
+}
