@@ -11,8 +11,8 @@ ScriptedImporter:
   importSettings:
     materials: 1
     shaderOverrides:
-      metallic: {fileID: 4800000, guid: 057d08f5d01be134593d0fe0e40c1759, type: 3}
-      metallicBlend: {fileID: 4800000, guid: 7258d825fa9aac6439f21eb173b880c6, type: 3}
+      metallic: {fileID: 4800000, guid: 7f6b524d1a0a3554abbe4c5ae82f3622, type: 3}
+      metallicBlend: {fileID: 4800000, guid: 7726cb28b89ee574e941eb80632ad540, type: 3}
       specular: {fileID: 4800000, guid: 7f107a7a2881c224483526685dba7320, type: 3}
       specularBlend: {fileID: 4800000, guid: 8478ae1ca59e7c349b9330ec2459b7dd, type: 3}
     animationSettings:

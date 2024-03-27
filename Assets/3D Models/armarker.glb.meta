@@ -7,7 +7,7 @@ ScriptedImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-  script: {fileID: 11500000, guid: 768a5a18fd6eb914f980bf85dd7b34ec, type: 3}
+  script: {instanceID: 0}
   importSettings:
     materials: 1
     shaderOverrides:
