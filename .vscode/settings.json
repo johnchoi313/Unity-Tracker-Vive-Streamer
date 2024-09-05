@@ -52,5 +52,5 @@
         "Temp/": true
     },
     "dotnet.preferCSharpExtension": true,
-    "dotnet.defaultSolution": "ARENA-Unity-Tracker-Vive.sln"
+    "dotnet.defaultSolution": "Unity-Vive-Optitrack-Base.sln"
 }
