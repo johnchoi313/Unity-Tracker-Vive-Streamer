@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2506,7 +2505,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &161917085
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2936,75 +2935,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163326367}
   m_CullTransparentMesh: 1
---- !u!1001 &169950368
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1423753004}
-    m_Modifications:
-    - target: {fileID: -7949136978043226412, guid: 1f368ca7962a1e74b81c39fcbb7aadf7, type: 3}
-      propertyPath: m_Name
-      value: armarker_origin_reference
-      objectReference: {fileID: 0}
-    - target: {fileID: -3124914424127336872, guid: 1f368ca7962a1e74b81c39fcbb7aadf7, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: -3124914424127336872, guid: 1f368ca7962a1e74b81c39fcbb7aadf7, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: -3124914424127336872, guid: 1f368ca7962a1e74b81c39fcbb7aadf7, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: -3124914424127336872, guid: 1f368ca7962a1e74b81c39fcbb7aadf7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -3124914424127336872, guid: 1f368ca7962a1e74b81c39fcbb7aadf7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -3124914424127336872, guid: 1f368ca7962a1e74b81c39fcbb7aadf7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -3124914424127336872, guid: 1f368ca7962a1e74b81c39fcbb7aadf7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -3124914424127336872, guid: 1f368ca7962a1e74b81c39fcbb7aadf7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -3124914424127336872, guid: 1f368ca7962a1e74b81c39fcbb7aadf7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -3124914424127336872, guid: 1f368ca7962a1e74b81c39fcbb7aadf7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -3124914424127336872, guid: 1f368ca7962a1e74b81c39fcbb7aadf7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: -3124914424127336872, guid: 1f368ca7962a1e74b81c39fcbb7aadf7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: -3124914424127336872, guid: 1f368ca7962a1e74b81c39fcbb7aadf7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 9199261849990390558, guid: 1f368ca7962a1e74b81c39fcbb7aadf7, type: 3}
 --- !u!1 &173299808
 GameObject:
   m_ObjectHideFlags: 0
@@ -11198,7 +11128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &804506539
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13191,13 +13121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05cc4b1999716644c9308528e38e7081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugManager: {fileID: 836595528}
-  newInfoCountText: {fileID: 836546638}
-  newWarningCountText: {fileID: 836601070}
-  newErrorCountText: {fileID: 836603864}
-  alertColorInfo: {r: 0.050980393, g: 0.32941177, b: 0.5647059, a: 1}
-  alertColorWarning: {r: 0.59607846, g: 0.45490196, b: 0, a: 1}
-  alertColorError: {r: 0.5647059, g: 0.050980393, b: 0.050980393, a: 1}
 --- !u!114 &836565860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13507,11 +13430,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce231987d32488f43b6fb798f7df43f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transformComponent: {fileID: 807821744}
-  viewportTransform: {fileID: 807712542}
-  logItemNormalColor1: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 0.697}
-  logItemNormalColor2: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.697}
-  logItemSelectedColor: {r: 0.32941177, g: 0.4862745, b: 0.7058824, a: 0.697}
 --- !u!114 &836595528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13524,72 +13442,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a4f16ed905adcd4ab0d7c8c11f0d72c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  singleton: 1
-  minimumHeight: 200
-  enableHorizontalResizing: 0
-  resizeFromRight: 1
-  minimumWidth: 240
-  enablePopup: 1
-  startInPopupMode: 1
-  startMinimized: 0
-  toggleWithKey: 1
-  toggleKey: 96
-  enableSearchbar: 1
-  topSearchbarMinWidth: 360
-  receiveLogsWhileInactive: 0
-  receiveInfoLogs: 1
-  receiveWarningLogs: 1
-  receiveErrorLogs: 1
-  receiveExceptionLogs: 1
-  captureLogTimestamps: 0
-  alwaysDisplayTimestamps: 0
-  maxLogCount: 2147483647
-  logsToRemoveAfterMaxLogCount: 16
-  queuedLogLimit: 256
-  clearCommandAfterExecution: 1
-  commandHistorySize: 15
-  showCommandSuggestions: 1
-  receiveLogcatLogsInAndroid: 0
-  logcatArguments: 
-  avoidScreenCutout: 1
-  popupAvoidsScreenCutout: 0
-  maxLogLength: 10000
-  autoFocusOnCommandInputField: 1
-  logItemPrefab: {fileID: 11408050, guid: 391be5df5ef62f345bb76a1051c04da7, type: 3}
-  commandSuggestionPrefab: {fileID: 114169395487023046, guid: 5e66896448428cf46a1854dbdc014914, type: 3}
-  infoLog: {fileID: 21300000, guid: 5a97d5afa6254804f81b7ba956296996, type: 3}
-  warningLog: {fileID: 21300000, guid: 05c7216c78d4dd34ebe2bac9c1e274d7, type: 3}
-  errorLog: {fileID: 21300000, guid: 66305a19e3614694f868c75a982e6b68, type: 3}
-  resizeIconAllDirections: {fileID: 21300000, guid: 7f0db3cf23c93fc4eac01cb3a52388ee, type: 3}
-  resizeIconVerticalOnly: {fileID: 21300000, guid: a9fd8f6b461461f4a92eafc60921ee78, type: 3}
-  collapseButtonNormalColor: {r: 0.31617647, g: 0.31617647, b: 0.31617647, a: 1}
-  collapseButtonSelectedColor: {r: 0.44117647, g: 0.4346886, b: 0.4346886, a: 1}
-  filterButtonsNormalColor: {r: 0.31617647, g: 0.31617647, b: 0.31617647, a: 1}
-  filterButtonsSelectedColor: {r: 0.44117647, g: 0.4346886, b: 0.4346886, a: 1}
-  commandSuggestionHighlightStart: <color=orange>
-  commandSuggestionHighlightEnd: </color>
-  logWindowTR: {fileID: 807752496}
-  logItemsContainer: {fileID: 807821744}
-  commandSuggestionsContainer: {fileID: 224982528845826844}
-  commandInputField: {fileID: 114000010711360880}
-  hideButton: {fileID: 836537928}
-  clearButton: {fileID: 114466839045801174}
-  collapseButton: {fileID: 836564652}
-  filterInfoButton: {fileID: 836656112}
-  filterWarningButton: {fileID: 836565860}
-  filterErrorButton: {fileID: 836608270}
-  infoEntryCountText: {fileID: 836655896}
-  warningEntryCountText: {fileID: 836551950}
-  errorEntryCountText: {fileID: 836573248}
-  searchbar: {fileID: 224927885032608028}
-  searchbarSlotTop: {fileID: 224619367162709922}
-  searchbarSlotBottom: {fileID: 224755787295791828}
-  resizeButton: {fileID: 836604048}
-  snapToBottomButton: {fileID: 1486652126545846}
-  logWindowCanvasGroup: {fileID: 807720656}
-  popupManager: {fileID: 836565058}
-  logItemsScrollRect: {fileID: 836609958}
-  recycledListView: {fileID: 836594616}
 --- !u!114 &836600476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13602,8 +13454,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb564dcb180e586429c57456166a76b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugsScrollRect: {fileID: 836609958}
-  debugLogManager: {fileID: 836595528}
 --- !u!114 &836600916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14896,8 +14746,6 @@ MonoBehaviour:
   - {fileID: 502167831}
   - {fileID: 1093148300}
   - {fileID: 1362282232}
-  arenaMarkerMapper: {fileID: 1158678107}
-  viveMarkers: []
   uiText: {fileID: 146649291}
 --- !u!1 &944505883
 GameObject:
@@ -15358,7 +15206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1017158001
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17845,7 +17693,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd01216202850547ab2a0defc85a1dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  markers: []
 --- !u!4 &1158678108
 Transform:
   m_ObjectHideFlags: 0
@@ -19052,11 +18899,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arenaObject: {fileID: 0}
---- !u!4 &1245740595 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -3124914424127336872, guid: 1f368ca7962a1e74b81c39fcbb7aadf7, type: 3}
-  m_PrefabInstance: {fileID: 169950368}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1249661971
 GameObject:
   m_ObjectHideFlags: 0
@@ -21242,7 +21084,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1245740595}
   - {fileID: 606519744}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22409,14 +22250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4de79e988e98864da8a420e6075365b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arenaClientSceneObject: {fileID: 0}
-  acs: {fileID: 0}
-  arenaClientScenePrefab: {fileID: 1804037738528899349, guid: 0aba5cec8c2f3354b9d019acf2f0ce62, type: 3}
-  arenaConnected: 0
-  arenaNamespaceField: {fileID: 1863809829}
-  arenaScenenameField: {fileID: 161917086}
-  arenaNamespace: 
-  arenaScenename: 
 --- !u!4 &1591434105
 Transform:
   m_ObjectHideFlags: 0
@@ -25168,7 +25001,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1863809828
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28689,7 +28522,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2143345059
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29681,7 +29514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6565f2084f5aef44abe57c988745b9c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugManager: {fileID: 836595528}
 --- !u!114 &114565305026009026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29724,7 +29556,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3cc1b407f337e641ad32a2e91d5b478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  embeddedEventSystem: {fileID: 0}
 --- !u!114 &114590114266123364
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2,9 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ArenaUnity;
-using ArenaUnity.Components;
-
 using TMPro;
 
 //-------------------------------------//
@@ -67,10 +64,6 @@ public class ViveTrackerManager : MonoBehaviour {
 
     public List<ViveTrackerArenaObject> viveTrackerArenaObjects;
 
-    public ArenaMarkerMapper arenaMarkerMapper;
-
-    public List<ArenaArmarker> viveMarkers;
-
     public TMP_Text uiText;
 
 
@@ -79,6 +72,7 @@ public class ViveTrackerManager : MonoBehaviour {
         //if(Input.GetKeyDown(KeyCode.Backspace)) { DisconnectAllViveTrackers(); }
     }
 
+    /*
 
     public void ConnectAllViveTrackers() {
 
@@ -127,7 +121,7 @@ public class ViveTrackerManager : MonoBehaviour {
         }
     }
 
-
+    */
 
 
 
