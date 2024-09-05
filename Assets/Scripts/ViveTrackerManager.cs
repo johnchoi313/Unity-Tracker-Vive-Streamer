@@ -62,8 +62,6 @@ public class ViveTrackerManager : MonoBehaviour {
     }
 
 
-    public List<ViveTrackerArenaObject> viveTrackerArenaObjects;
-
     public TMP_Text uiText;
 
 
