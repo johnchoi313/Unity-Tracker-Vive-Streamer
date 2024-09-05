@@ -15,8 +15,7 @@ namespace RuntimeSceneGizmo
 		public float moveSpeed = 1;
 		public float scrollSpeed = 1;
 
-		private void Awake()
-		{
+		private void Awake() {
 			mainCamParent = Camera.main.transform.parent;
 		}
 
@@ -30,10 +29,8 @@ namespace RuntimeSceneGizmo
 				Vector2 deltaPos = ( mousePos - prevMousePos ) * sensitivity;
 
 				Vector3 rot = mainCamParent.localEulerAngles;
-				while( rot.x > 180f )
-					rot.x -= 360f;
-				while( rot.x < -180f )
-					rot.x += 360f;
+				while( rot.x > 180f ) { rot.x -= 360f; }
+				while( rot.x < -180f ) { rot.x += 360f; }
 
 				rot.x = Mathf.Clamp( rot.x - deltaPos.y, -89.8f, 89.8f );
 				rot.y += deltaPos.x;
