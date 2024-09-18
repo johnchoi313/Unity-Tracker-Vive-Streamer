@@ -6,13 +6,10 @@ using TMPro;
 
 //-------------------------------------//
 
-
-
 public class ViveTrackerManager : MonoBehaviour {
 
     public Transform viveOrigin;
 
-    
     public TMP_InputField oxField;
     public TMP_InputField oyField;
     public TMP_InputField ozField;
@@ -53,14 +50,11 @@ public class ViveTrackerManager : MonoBehaviour {
         setOriginR(""+PlayerPrefs.GetFloat("OriginR", 0));
     }
 
-
-
     public void setOrigin() {
         transform.position = new Vector3(ox,oy,oz);
         transform.rotation = Quaternion.identity;
         transform.Rotate(0,or,0);
     }
-
 
     public TMP_Text uiText;
 
@@ -120,9 +114,5 @@ public class ViveTrackerManager : MonoBehaviour {
     }
 
     */
-
-
-
-
 
 }
