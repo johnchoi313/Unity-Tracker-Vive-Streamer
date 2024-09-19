@@ -4,9 +4,21 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+[System.Serializable]
+public class MultiplayerSteamDeviceData {
+    public SteamDeviceData player1 = new SteamDeviceData();
+    public SteamDeviceData player2 = new SteamDeviceData();
+    public SteamDeviceData player3 = new SteamDeviceData();
+    public SteamDeviceData player4 = new SteamDeviceData();
+}
+
 public class PlayerManager : MonoBehaviour
 {
     public List<SteamDeviceLabeler> devices;
+
+    public UDPSender sender;
+
+    public MultiplayerSteamDeviceData multiplayerData;
 
     int player1 = 0;
     int player2 = 0;
@@ -18,7 +30,6 @@ public class PlayerManager : MonoBehaviour
     public TMP_Dropdown player3dropdown;
     public TMP_Dropdown player4dropdown;
     
-
     public void AssignPlayer1(int index) {
         if (player1 != index) {
             //clear previous assignment
@@ -72,7 +83,8 @@ public class PlayerManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    
+        multiplayerData = new MultiplayerSteamDeviceData();
+
         AssignPlayer1(PlayerPrefs.GetInt("player1", 0));
         AssignPlayer2(PlayerPrefs.GetInt("player2", 0));
         AssignPlayer3(PlayerPrefs.GetInt("player3", 0));
@@ -88,5 +100,38 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //Get data
+        if(player1 > 0) {
+            multiplayerData.player1 = devices[player1 - 1].data;
+        } else {
+            multiplayerData.player1 = new SteamDeviceData();    
+        }
+
+        if(player2 > 0) {
+            multiplayerData.player2 = devices[player2 - 1].data;
+        } else {
+            multiplayerData.player2 = new SteamDeviceData();    
+        }
+
+        if(player3 > 0) {
+            multiplayerData.player3 = devices[player3 - 1].data;
+        } else {
+            multiplayerData.player3 = new SteamDeviceData();    
+        }
+
+        if(player4 > 0) {
+            multiplayerData.player4 = devices[player4 - 1].data;
+        } else {
+            multiplayerData.player4 = new SteamDeviceData();    
+        }
+        
+        string message = JsonUtility.ToJson(multiplayerData);
+
+        Debug.Log("[MultiplayerSteamDeviceData] " + message);
+
+        sender.sendMessage(message);
+
+
     }
 }

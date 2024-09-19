@@ -6,9 +6,9 @@ using System.Net.Sockets;
 using System.Collections;
 using System.Collections.Generic;
 
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
 
 public class UDPReceiver : MonoBehaviour {
    
@@ -26,8 +26,8 @@ public class UDPReceiver : MonoBehaviour {
 
     private float timer = 0;
     public float resetDelay = 10;
-    public InputField PortField;
-    public Text ConnectButton;
+    public TMP_InputField PortField;
+    public TMP_Text ConnectButton;
 
     public void startReceiveThread() {
         stopReceiverThread();

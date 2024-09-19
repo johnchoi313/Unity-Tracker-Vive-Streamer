@@ -1,9 +1,11 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
-using System.Net.Sockets;
+﻿using System.Net.Sockets;
 using System.Threading;
 using System.Text;
 using System.Net;
+
+using UnityEngine.UI;
+using UnityEngine;
+using TMPro;
 
 public class UDPSender : MonoBehaviour {
    
@@ -18,10 +20,10 @@ public class UDPSender : MonoBehaviour {
     public int sleep = 50;
     bool sendingData = true;
     
-    public Text ConnectButton;
-    public InputField IPField;
-    public InputField PortField;
-    public InputField MessageField;
+    public TMP_Text ConnectButton;
+    public TMP_InputField IPField;
+    public TMP_InputField PortField;
+    public TMP_InputField MessageField;
 
     public void setMessage() { senderMessage = MessageField.text; }
     public void sendMessage(string message) { senderMessage = message; }
