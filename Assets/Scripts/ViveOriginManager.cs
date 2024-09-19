@@ -13,7 +13,6 @@ public class ViveOriginManager : MonoBehaviour {
     public Transform originDevice;
     public Transform viveParent;
 
-
     public void SelectOriginDevice(int index) {
         originDevice = SteamVRTransforms[index-1];
     }
